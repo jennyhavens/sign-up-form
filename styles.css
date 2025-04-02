@@ -1,50 +1,49 @@
 @font-face {
     font-family: my-font;
     src: url(Norse-Bold.otf);
-  }
+}
   
-  body {
+body {
     margin: 0;
     width: 100vw;
     height: 100vh;
     background-color: lightblue;
-  
     display: flex;
-  }
+}
   
-  .left {
+.left {
     flex: 1;
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .picture {
+.picture {
     width: 200%;
     height: 100%;
     position: absolute;
-  }
+}
   
-  .credits {
+.credits {
     color: white;
     opacity: 0.9;
-    font-family: Helvetica;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: calc(0.5vw + 0.5vh);
     position: absolute;
     width: 100%;
     text-align: center;
     margin: 0;
     bottom: 1.5%;
-  }
+}
   
-  a:link {
+a:link {
     color: white;
-  }
+}
   
-  a:visited {
+a:visited {
     color: white;
-  }
+}
   
-  .card-container {
+.card-container {
     width: 100%;
     height: 20%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -53,50 +52,50 @@
     top: 20%;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .odin {
+.odin {
     height: 85%;
     width: auto;
-  }
+}
   
-  .card-container p {
-    margin: 0;
+.card-container p {
+    padding-top: 30px;
     color: white;
     font-family: my-font;
     font-size: calc(4vw + 4vh);
-  }
+}
   
-  .right {
+.right-side {
     background-color: rgb(253, 227, 190);
     flex: 1.8 1 0;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .message {
-    background-color: rgb(255, 198, 129) /*rgb(250, 205, 149)*/;
+.message {
+    background-color: rgb(255, 198, 129);
     flex: 1.1;
     display: flex;
     align-items: flex-end;
-  }
+}
   
-  .message p {
+.message p {
     margin: 0;
     box-sizing: border-box;
     padding: 20px 20% 50px 45px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 550;
     font-size: 1.5rem;
-  }
+}
   
-  .middle {
+.middle {
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .form-title {
+.form-title {
     flex: 0 1 0;
     margin: 0;
     padding: 20px 40px 20px 45px;
@@ -104,56 +103,59 @@
     font-weight: 550;
     font-size: 1.5rem;
     opacity: 0.9;
-  }
+}
   
-  .form {
+.form {
     flex: 1;
     padding: 0px 25% 30px 45px;
     display: flex;
     gap: 70px;
-  }
+}
   
-  .form label {
+.form label {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 1px;
-  
     display: block;
-  }
+}
   
-  .form input {
+.form input {
     width: 250px;
     height: 25px;
     margin-top: 2px;
     border-radius: 5px;
     border: 1px solid black;
-  }
+}
   
-  .form input:valid {
-    border: 1px solid green;
-  }
-  
-  .first-col {
+.form input:valid {
+    border: 2px solid green;
+}
+
+.form input:user-invalid {
+    border: 2px solid red;
+}
+
+.first-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
   
-  .second-col {
+.second-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
   
-  .buttons {
+.bottom {
     background-color: rgb(250, 205, 149);
     flex: 1.1;
-  }
-  
-  .buttons button {
+}
+
+.bottom button {
     background-color: #8b095e;
     font-family: Helvetica, Arial, sans-serif;
     width: 200px;
@@ -163,16 +165,16 @@
     color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
     margin: 35px 0px 0px 45px;
-  }
+}
   
-  .buttons p {
+.bottom p {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     opacity: 0.8;
     margin: 35px 0px 0px 45px;
-  }
+}
   
-  .buttons a {
+.bottom a {
     color: #8b095e;
     text-decoration: none;
-  }
+}
