@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left">
+      <img src="joshua-sortino-LqKhnDzSF-8-unsplash.jpg" class="picture" />
+      <div class="card-container">
+        <img src="odin-lined.png" class="odin" />
+        <p>odin</p>
+      </div>
+      <p class="credits">Photo by <a href="https://unsplash.com/@sortino?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua Sortino</a> on <a href="https://unsplash.com/photos/worms-eye-view-photography-of-ceiling-LqKhnDzSF-8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <div class="right">
+      <div class="message">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up <em>now</em> to get started.
+          <br />
+          <br />
+          You <em>know</em> you want to.
+        </p>
+      </div>
+      <div class="middle">
+        <p class="form-title">Let's do this!</p>
+        <form class="form" id="a-form">
+          <div class="first-col">
+            <div>
+              <label>first name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Jane" maxlength="30" required/>
+            </div>
+            <div>
+              <label>email</label>
+              <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required/>
+            </div>
+            <div>
+              <label>password</label>
+              <input type="password" id="password" name="password" placeholder="**********" minlength="8" maxlength="20" required/>
+            </div>
+          </div>
+
+          <div class="second-col">
+            <div>
+              <label>last name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Doe" maxlength="40" required/>
+            </div>
+            <div>
+              <label>phone number</label>
+              <input type="text" id="phone-number" name="phone-number" placeholder="XXX-XXX-XXXX" required/>
+            </div>
+
+            <div>
+              <label>confirm password</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="**********" minlength="8" maxlength="20" required/>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" form="a-form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
